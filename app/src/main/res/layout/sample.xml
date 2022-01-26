@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/black"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/uaeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/uk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/uaeR"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/source_sans_pro_bold"
+                            android:includeFontPadding="false"
+                            android:text="UK"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/ukHiddenTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:includeFontPadding="false"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:visibility="gone" />
+
+                            <TextClock
+                                android:id="@+id/ukTimeHour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/ukHiddenTime"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:format12Hour="H"
+                                android:format24Hour="H"
+                                android:includeFontPadding="false"
+                                android:text="10"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:timeZone="Europe/London" />
+
+                            <TextClock
+                                android:id="@+id/ukTimeMinutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/ukTimeHour"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:format24Hour="mm"
+                                android:format12Hour="mm"
+                                android:text="25"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:timeZone="Europe/London" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/source_sans_pro_bold"
+                            android:includeFontPadding="false"
+                            android:text="NL"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/nlHiddenTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:includeFontPadding="false"
+                                android:text="10"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:visibility="gone" />
+
+                            <TextClock
+                                android:id="@+id/nlTimeHour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/nlHiddenTime"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:format24Hour="H"
+                                android:format12Hour="H"
+                                android:includeFontPadding="false"
+                                android:text="10"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:timeZone="Europe/Amsterdam" />
+
+                            <TextClock
+                                android:id="@+id/nlTimeMinutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@+id/nlTimeHour"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:format24Hour="mm"
+                                android:format12Hour="mm"
+                                android:text="25"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:timeZone="Europe/Amsterdam" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/source_sans_pro_bold"
+                            android:includeFontPadding="false"
+                            android:text="US"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="-5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/usHiddenTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:includeFontPadding="false"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:visibility="gone" />
+
+                            <TextClock
+                                android:id="@+id/usTimeHour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/usHiddenTime"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:includeFontPadding="false"
+                                android:text="10"
+                                android:format24Hour="H"
+                                android:format12Hour="H"
+                                android:timeZone="US/Eastern"
+                                android:textColor="@color/white"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <TextClock
+                                android:id="@+id/usTimeMinutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_toRightOf="@id/usTimeHour"
+                                android:fontFamily="@font/source_sans_pro_bold"
+                                android:format24Hour="mm"
+                                android:format12Hour="mm"
+                                android:text="25"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:timeZone="US/Eastern" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/uaeWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uaeR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:includeFontPadding="false"
+                    android:text="UAE"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/uaeTray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uaeR">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-15dp"
+                        android:orientation="vertical">
+
+                        <TextClock
+                            android:id="@+id/uaeHourTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/source_sans_pro_bold"
+                            android:format24Hour="H"
+                            android:format12Hour="H"
+                            android:includeFontPadding="false"
+                            android:text="10"
+                            android:textColor="@color/white"
+                            android:textSize="70sp"
+                            android:textStyle="bold"
+                            android:timeZone="Asia/Dubai" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_toRightOf="@id/uaeHourTime"
+                        android:orientation="vertical">
+
+                        <TextClock
+                            android:id="@+id/uaeTimeMinutes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/source_sans_pro_bold"
+                            android:format24Hour="mm"
+                            android:format12Hour="mm"
+                            android:includeFontPadding="false"
+                            android:text="30"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:timeZone="Asia/Dubai"
+                            android:typeface="sans" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/uaeTimeMinutes"
+                            android:layout_marginTop="22dp">
+
+
+                            <TextClock
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/source_sans_pro_semibold"
+                                android:format24Hour="EEEE"
+                                android:format12Hour="EEEE"
+                                android:includeFontPadding="false"
+                                android:text="Sunday"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/dateFullStop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:layout_toRightOf="@id/date"
+                                android:fontFamily="sans-serif"
+                                android:includeFontPadding="false"
+                                android:text="."
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/dateFullStop"
+                                android:orientation="vertical">
+
+                                <ProgressBar
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginTop="3dp"
+                                    android:indeterminate="false"
+                                    android:indeterminateOnly="false"
+                                    android:max="100"
+                                    android:min="0"
+                                    android:progress="100"
+                                    android:progressDrawable="@drawable/progress_drawable_sufficient"
+                                    android:rotation="180" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="end"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="7dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="end"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/bitcoinPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:textStyle="bold"
+                                            android:fontFamily="sans-serif"
+                                            android:text="Bitcoin - ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/ethereumPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:textStyle="bold"
+                                            android:fontFamily="sans-serif"
+                                            android:text="Ethereum -  ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="2dp"
+                                            android:layout_marginTop="3dp"
+                                            android:layout_marginBottom="3dp"
+                                            android:layout_gravity="end"
+                                            android:background="@color/white"
+                                            />
+
+                                        <TextView
+                                            android:id="@+id/gbpAEDPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:fontFamily="sans-serif"
+                                            android:text="GBPAED -  ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/eurGbpPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:textStyle="bold"
+                                            android:fontFamily="sans-serif"
+                                            android:text="EURGBP -  ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/euraed"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:textStyle="bold"
+                                            android:fontFamily="sans-serif"
+                                            android:text="EURAED -  ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/gbpUsdPrice"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:textStyle="bold"
+                                            android:fontFamily="sans-serif"
+                                            android:text="GBPUSD -  ######"
+                                            android:textColor="@color/white"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/refresh"
+                                        android:layout_width="20dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="19dp"
+                                        android:background="@color/black"
+                                        android:src="@drawable/ic_refresh" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/uaeLayout">
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
